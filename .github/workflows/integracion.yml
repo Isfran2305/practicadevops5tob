@@ -22,11 +22,11 @@ jobs:
           then pip install -r requirements.txt
           pip install pytest
 
-      - name: Ejecutar la aplicacion
-        run: python app.py
-
       - name: Test with pytest
         run: pytest
+
+      - name: Ejecutar la aplicacion
+        run: python app.py
 
       - name: Simulacion del deploy
         run: echo "Simulando el deploy a produccion"
